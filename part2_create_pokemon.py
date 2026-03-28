@@ -7,13 +7,13 @@ def create_pokemon() :
     oCharmander = Pokemon("Charmander", "Fire", 55)
     oSquirtle = Pokemon("Squirtle", "Water", 65)
 
-    print(oCharmander.get_info)
-    oCharmander.heal
-    print(oCharmander.get_info)
+    print(oCharmander.get_info())
+    oCharmander.heal()
+    print(oCharmander.get_info())
 
     lstPokemon.append(oBulbasaur)
     lstPokemon.append(oCharmander)
     lstPokemon.append(oSquirtle)
 
     for pokemon in lstPokemon :
-        print(pokemon.get_info)
+        print(pokemon.get_info)()
