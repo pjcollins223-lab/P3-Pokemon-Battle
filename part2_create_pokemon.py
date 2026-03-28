@@ -16,4 +16,4 @@ def create_pokemon() :
     lstPokemon.append(oSquirtle)
 
     for pokemon in lstPokemon :
-        print(pokemon.get_info)()
+        print(pokemon.get_info())
