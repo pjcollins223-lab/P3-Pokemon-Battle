@@ -5,7 +5,7 @@ import random
 import move_classes as mc
 
 # create 9 move objects
-def createMoves () :
+def create_moves () :
     move1 = mc.Move("Tackle", "Normal", 5, 20)
     move2 = mc.Move("Quick Attack", "Normal", 6, 25)
     move3 = mc.Move("Slash", "Normal", 10, 30)
@@ -22,18 +22,14 @@ def createMoves () :
                 move7, move8, move9
                ]
     
-    return lstMoves
+    for index in range(0, 3, 1) :
+        inList = False
+        while not inList :
+            rand_num = random.randrange(0,len(lstMoves)) 
+            inList = True
+            print(lstMoves[rand_num].get_info())
+            print(f"Generated attack value: { lstMoves[rand_num].generate_attack_value()}")
+            lstMoves.pop(rand_num)
 
-lstMoves = createMoves()
-
-for index in range(0, 3, 1) :
-    inList = False
-    while not inList :
-        rand_num = random.randrange(0,len(lstMoves)) 
-        inList = True
-        print(lstMoves[rand_num].get_info())
-        print(f"Generated attack value: { lstMoves[rand_num].generate_attack_value()}")
-        lstMoves.pop(rand_num)
-
-input("Press enter to continue...")
-    
+    input("Press enter to continue...")
+        
