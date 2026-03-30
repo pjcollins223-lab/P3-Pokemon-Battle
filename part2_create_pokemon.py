@@ -1,11 +1,13 @@
 #Porter Collins
 #Part 2: Creating the Pokemon objects for P3 Pokemon Battle (Team Project)
 
+import pokemon_class as pc
+
 def create_pokemon() :
     lstPokemon = []
-    oBulbasaur = Pokemon("Bulbasaur", "Grass", 60)
-    oCharmander = Pokemon("Charmander", "Fire", 55)
-    oSquirtle = Pokemon("Squirtle", "Water", 65)
+    oBulbasaur = pc.Pokemon("Bulbasaur", "Grass", 60)
+    oCharmander = pc.Pokemon("Charmander", "Fire", 55)
+    oSquirtle = pc.Pokemon("Squirtle", "Water", 65)
 
     print(oCharmander.get_info)
     oCharmander.heal
