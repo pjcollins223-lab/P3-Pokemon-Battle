@@ -22,6 +22,7 @@ def create_moves () :
                 move7, move8, move9
                ]
     
+    # print the information for 3 random moves
     for index in range(0, 3, 1) :
         inList = False
         while not inList :
