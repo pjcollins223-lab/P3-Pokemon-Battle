@@ -3,6 +3,7 @@
 
 import move_objects as mo
 import part2_create_pokemon as cp
+import pokemon_class as pc
 
 # call the function to create move objects
 mo.create_moves()
