@@ -17,7 +17,8 @@ def create_moves () :
     move9 = mc.Move("Solar Beam", "Grass", 18, 27)
 
     # store in list
-    lstMoves = [move1, move2, move3, 
+    lstMoves = [
+                move1, move2, move3, 
                 move4, move5, move6, 
                 move7, move8, move9
                ]
